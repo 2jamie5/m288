@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M288 Challenge</title>
+  <meta charset="UTF-8">
+  <title>Stein Papier Schere</title>
+  <link rel="stylesheet" href="skript.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Stein · Papier · Schere</h1>
+    <nav>
+      <a href="index.html">Spiel</a>
+      <a href="howtoplay.html">Wie spielt man?</a>
+    </nav>
+  </header>
+
+  <main class="game-container">
+    <section class="choices">
+      <h2>Deine Wahl</h2>
+      <div class="buttons">
+        <button data-choice="stein">🪨 Stein</button>
+        <button data-choice="papier">📄 Papier</button>
+        <button data-choice="schere">✂️ Schere</button>
+      </div>
+    </section>
+
+    <section class="status">
+      <h2>Runde</h2>
+      <p id="player-choice">Du hast noch nichts gewaehlt.</p>
+      <p id="computer-choice">Computer hat noch nichts gewaehlt.</p>
+      <p id="round-result" class="result">Starte das Spiel mit einer Wahl.</p>
+    </section>
+
+    <section class="scoreboard">
+      <h2>Punktestand</h2>
+      <p>Du: <span id="player-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
+      <p>Unentschieden: <span id="draw-score">0</span></p>
+      <button id="reset-btn">Zuruecksetzen</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Modul 288 – Mini Game von Jamie</p>
+  </footer>
+
+  <script src="skript.js"></script>
 </body>
 </html>
